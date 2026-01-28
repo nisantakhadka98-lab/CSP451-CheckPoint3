@@ -21,4 +21,3 @@ describe("GET /health", () => {
     expect(typeof res.body.uptime).toBe("number");
   });
 });
-
