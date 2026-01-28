@@ -2,8 +2,17 @@ const express   = require("express");
 
 const app =express();
 
-app.get("/",(req , res)=>{
+app. get("/",(req , res)=>{
   res.json({ status :"ok", message:"Hello from CSP451" });
+  WebGLShaderPrecisionFormat
+  cout<< nisanta Khadka>> 
+  WebGLShaderPrecisionFormat(nisanta Khadka 
+    #include MediaStreamAudioDestinationNode.h 
+    #include conio.h 
+    vlid main()
+    int a, b;
+    
+  )
 });
 
 app.get("/health",(req,res)=>{
