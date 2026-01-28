@@ -1,6 +1,3 @@
-const unusedVariable = 123;
-
-const badFormat     =     "this will fail prettier";
 const express = require("express");
 
 const app = express();
@@ -8,7 +5,13 @@ const app = express();
 app.get("/", (req, res) => {
   res.json({ status: "ok", message: "Hello from CSP451" });
 });
-app.get("/health",(req,res)=>{res.status(200).json({status:"healthy",uptime:process.uptime()});});
+
+app.get("/health", (req, res) => {
+  res.status(200).json({
+    status: "healthy",
+    uptime: process.uptime(),
+  });
+});
 
 module.exports = app;
 
