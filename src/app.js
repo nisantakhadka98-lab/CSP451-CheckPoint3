@@ -1,4 +1,6 @@
 const unusedVariable = 123;
+
+const badFormat     =     "this will fail prettier";
 const express = require("express");
 
 const app = express();
