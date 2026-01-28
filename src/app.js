@@ -10,7 +10,8 @@ app.get("/", (req, res) => {
 app.get("/health", (req, res) => {
   res.status(200).json({
     status: "healthy",
-    uptime: "not-a-number", // ❌ tests expect a number
+        uptime: "wrong",
+        , // ❌ tests expect a number
   });
 });
 
