@@ -1,6 +1,6 @@
 const express   = require("express");
 
-const app=express();
+const app =express();
 
 app.get("/",(req , res)=>{
   res.json({ status :"ok", message:"Hello from CSP451" });
