@@ -1,3 +1,4 @@
+const unusedVariable = 123;
 const express = require("express");
 
 const app = express();
