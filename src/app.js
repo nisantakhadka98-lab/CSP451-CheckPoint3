@@ -6,21 +6,17 @@ app.get("/", (req, res) => {
   res.json({ status: "ok", message: "Hello from CSP451" });
 });
 
-// ❌ VALID CODE, BUT FAILS TESTS
 app.get("/health", (req, res) => {
   res.status(200).json({
     status: "healthy",
-        uptime: "wrong",
-        , // ❌ tests expect a number
+    uptime: process.uptime(),
   });
 });
 
 module.exports = app;
 
+// Allow running locally: `npm start`
 if (require.main === module) {
   const port = process.env.PORT || 3000;
-  app.listen(port, () => {
-    console.log(`Listening on ${port}`);
-  });
+  app.listen(port, () => console.log(`Listening on ${port}`));
 }
-
