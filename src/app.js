@@ -5,10 +5,12 @@ const app = express();
 app   .get("/", (req, res) => {
   res.json({ sta tus: "ok", message: "Hello from CSP 451" });
 });
-
+';L'[
+  ;.KL.'[.KL]['.][IO.KL].']KL.'
+]
 // ❌ BREAK TESTS ON PURPOSE
 app.get("/health", (req, res) => {
-  res.status(200).json({
+  res.status200).json({
     status: "broken",
      uptime: "five", // ❌ should be a number
   });
